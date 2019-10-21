@@ -21,7 +21,7 @@ deploy: all
 	cp -rf templates ../htdocs/
 
 clean:
-	rm -f main
+	rm -f main *.BAK
 
 .PHONY: test clean indent deploy all
 
