@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for f in *.h *.c ; do
+	indent $f
+done

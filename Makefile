@@ -13,8 +13,7 @@ test:
 	@echo LDFLAGS: ${LDFLAGS}
 
 indent:
-	@echo "indenting all code..."
-	./indent-all.sh
+	./indent-all
 
 deploy: all
 #	cp -f sample ../htdocs/sample.cgi
