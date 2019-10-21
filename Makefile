@@ -1,12 +1,12 @@
 CFLAGS+= -W -Wall -O2 -std=c99 -g -pedantic
 #cc -O2 -pipe    -o main main.c
 
-all: wiki admin menu sample options
+all: main 
 
 options: $@.c $(SRCS) $(HDRS)
 	$(CC) $(CFLAGS) -o $@ $@.c ${SRCS} $(LDFLAGS)
 
-test: test_codemirror 
+test:
 	@echo CURDIR:${.CURDIR}
 	@echo TARGET:$@ [should be 'test']
 	@echo CFLAGS: $(CFLAGS)
